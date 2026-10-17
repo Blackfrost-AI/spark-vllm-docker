@@ -14,7 +14,10 @@ recipe_version: "1"
 name: CYBER-FROST-FP4 (Solo)
 description: vLLM serving local CYBER-FROST-3.8-FP4-Local on one DGX Spark with PLE disk offload (branded serve)
 
-model: CYBER-FROST-FP4
+# Model field intentionally empty: weights are LOCAL, not in the HF cache.
+# Launch must pass:
+#   -v /home/blackfrost_ai/models/CYBER-FROST-3.8-FP4-Local:/models/CYBER-FROST-3.8-FP4-Local
+model: ""
 container: vllm-node-b12x
 
 solo_only: true
