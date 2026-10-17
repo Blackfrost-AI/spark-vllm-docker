@@ -34,7 +34,7 @@ defaults:
   max_num_seqs: 8
   max_num_batched_tokens: 4096
   num_speculative_tokens: 4
-  gpu_memory_utilization: 0.8
+  gpu_memory_utilization: 0.92
 
 env:
   VLLM_PLE_TABLE_MEMORY: "disk"
