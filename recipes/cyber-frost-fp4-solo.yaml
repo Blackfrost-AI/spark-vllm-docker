@@ -34,7 +34,7 @@ defaults:
   max_num_seqs: 8
   max_num_batched_tokens: 4096
   num_speculative_tokens: 4
-  gpu_memory_utilization: 1.0
+  gpu_memory_utilization: 0.92
 
 env:
   VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS: "0"
